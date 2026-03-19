@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本科生请销假证明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            padding: 10px;
+        }
+        .container {
+            max-width: 100%;
+            background: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        .section-title {
+            color: #0078d7;
+            font-size: 18px;
+            margin: 20px 0 10px;
+            padding-left: 5px;
+            border-left: 4px solid #0078d7;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .info-row label {
+            color: #333;
+            font-size: 16px;
+        }
+        .info-row .value {
+            color: #222;
+            font-size: 16px;
+            text-align: right;
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 5px;
+        }
+        .file-upload {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .file-input {
+            display: none;
+        }
+        .file-label {
+            background: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .file-name {
+            font-size: 14px;
+            color: #555;
+        }
+        .download-link {
+            color: #0078d7;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .download-link:hover {
+            text-decoration: underline;
+        }
+        .qr-code {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>本科学生请销假证明</h1>
+
+        <div class="section-title">基本信息</div>
+        <div class="info-row">
+            <label>学  院</label>
+            <span class="value">信息工程学院</span>
+        </div>
+        <div class="info-row">
+            <label>姓  名</label>
+            <span class="value">买泽龙</span>
+        </div>
+        <div class="info-row">
+            <label>学  号</label>
+            <span class="value">202521180358</span>
+        </div>
+        <div class="info-row">
+            <label>专  业</label>
+            <span class="value">计算机科学与技术(二)</span>
+        </div>
+        <div class="info-row">
+            <label>班  级</label>
+            <span class="value">计科(二)2501</span>
+        </div>
+        <div class="info-row">
+            <label>年  级</label>
+            <span class="value">2025</span>
+        </div>
+        <div class="info-row">
+            <label>电  话</label>
+            <span class="value">15527101831</span>
+        </div>
+        <div class="info-row">
+            <label>Q  Q</label>
+            <span class="value">3078492506</span>
+        </div>
+        <div class="info-row">
+            <label>班长电话</label>
+            <span class="value">15527101831</span>
+        </div>
+        <div class="info-row">
+            <label>请假类型</label>
+            <div class="radio-group">
+                <label><input type="radio" name="leaveType" checked> 事假</label>
+                <label><input type="radio" name="leaveType"> 病假</label>
+                <label><input type="radio" name="leaveType"> 其他类型</label>
+            </div>
+        </div>
+        <div class="info-row">
+            <label>请假时限</label>
+            <div class="value">
+                <div>2026-03-19</div>
+                <div>2026-03-19</div>
+            </div>
+        </div>
+        <div class="info-row">
+            <label>共计天数</label>
+            <span class="value">1</span>
+        </div>
+        <div class="info-row">
+            <label>请假原因</label>
+            <span class="value">去医院补牙</span>
+        </div>
+        <div class="info-row">
+            <label>上传证明材料</label>
+            <div class="file-upload">
+                <input type="file" id="fileInput" class="file-input" accept="image/*">
+                <label for="fileInput" class="file-label">选择图片</label>
+                <span class="file-name" id="fileName">未选择文件</span>
+            </div>
+        </div>
+        <div class="info-row">
+            <label>证明材料模板</label>
+            <a href="家长知情承诺书.docx" class="download-link" download>知情书下载（事假请上传家长或辅导员知情书，病假请上传校医院二级医院证明）</a>
+        </div>
+
+        <div class="section-title">课程信息</div>
+        <div class="info-row">
+            <label>课程时间</label>
+            <span class="value">星期四</span>
+        </div>
+        <div class="info-row">
+            <label>课程节次</label>
+            <span class="value">01020304</span>
+        </div>
+        <div class="info-row">
+            <label>请假课程</label>
+            <span class="value">计算机取证</span>
+        </div>
+        <div class="info-row">
+            <label>任课老师</label>
+            <span class="value">杨阳</span>
+        </div>
+
+        <div class="section-title">第二联系人信息</div>
+        <div class="info-row">
+            <label>姓  名</label>
+            <span class="value">买泽龙</span>
+        </div>
+        <div class="info-row">
+            <label>电  话</label>
+            <span class="value">15025934233</span>
+        </div>
+        <div class="info-row">
+            <label>现居地址</label>
+            <span class="value">甘肃省平凉市</span>
+        </div>
+        <div class="info-row">
+            <label>与本人关系</label>
+            <span class="value">父子</span>
+        </div>
+
+        <div class="section-title">审核信息</div>
+        <div class="info-row">
+            <label>辅导员意见</label>
+            <span class="value">审核通过</span>
+        </div>
+        <div class="info-row">
+            <label>审核人</label>
+            <span class="value">王安琪</span>
+        </div>
+        <div class="info-row">
+            <label>审核日期</label>
+            <span class="value">2026-03-19</span>
+        </div>
+
+        <div class="qr-code">
+            <svg id="qrcode" width="200" height="200"></svg>
+        </div>
+
+        <div class="footer">
+            © 2009 - 2021. 中南财经政法大学(zuel.edu.cn). All rights reserved. Version 20210410-054026
+        </div>
+    </div>
+
+    <script>
+        
+        const fileInput = document.getElementById('fileInput');
+        const fileName = document.getElementById('fileName');
+        fileInput.addEventListener('change', function() {
+            if (this.files.length > 0) {
+                const file = this.files[0];
+                const size = (file.size / 1024).toFixed(1) + 'K';
+                fileName.textContent = `${file.name} (${size})`;
+            } else {
+                fileName.textContent = '未选择文件';
+            }
+        });
+
+        // 
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js';
+        script.onload = function() {
+            const url = window.location.href;
+            QRCode.toSVG(document.getElementById('qrcode'), url, {
+                width: 200,
+                height: 200,
+                color: {
+                    dark: '#000000',
+                    light: '#ffffff'
+                }
+            }, function(err) {
+                if (err) console.error(err);
+            });
+        };
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>
