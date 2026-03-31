@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>travel表单</title>
+  <style>
+     form {
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #95109e;
+    border-radius: 8px;
+    width: 500px;
+  }
+  /* 这一表单中主要定义了文本区、文本框以及复选框和提交按钮组件，是为了向旅行计划表格中补充内容 */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #bc1ac5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type="submit"] {
+    background-color: #e48f10;
+    color: rgb(16, 9, 9);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #157089;
+  }
+  
+  </style>
+</head>
+<body>
+  <form>
+    <label for="name">省份：</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="name">景点：</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="way">推荐旅行方式：</label>
+    <select id="way" name="way" required>
+      <option value="">请选择</option>
+      <option value="w1">动车</option>
+      <option value="w2">自驾</option>
+      <option value="w3">飞机</option>
+      <option value="w4">大巴</option>
+    </select>
+    
+    <label for="message">旅行建议：</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+    
+    <input type="submit" value="添加">
+  </form>
+</body>
+</html>

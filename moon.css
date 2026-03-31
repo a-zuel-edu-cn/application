@@ -1,0 +1,181 @@
+ /*   主页部分样式    */
+ body { 
+    background-color: #7c1df1;
+    font-family:      Georgia, "Times New Roman", Times, serif;
+    font-size:        small;
+    margin:           0px;
+  }
+  
+  header.headtop {
+    background-color: #ede913;
+    margin: 10px 10px 0px 10px;
+    height:           108px;
+    text-align: center;
+    font-weight: bolder;
+    font-size : 90px;
+  }
+  
+  header.headtop img#headright {
+      float: right;
+  }
+  header.headtop img#headleft {
+    float: left;
+ }
+  div#tableContainer {
+      display: table;
+      border-spacing: 10px;
+  }
+  
+  div#tableRow {
+      display: table-row;
+  }
+  
+  section#firework {
+      display: table-cell;
+      background-color: #de2a0a;
+      width: 30%;
+      padding: 8px;
+      vertical-align: top;
+      font-size: 110%;
+      line-height: 1;
+  }
+
+  section#sakura {
+    display: table-cell;
+    background:       #d51eb3;
+    width:auto;
+    font-size:        110%;
+    padding:          8px;
+    vertical-align: top;
+  }
+
+  section#wudang {
+    display: table-cell;
+    background:       #0af225;
+    width:auto;
+    font-size:        110%;
+    padding:          8px;
+    vertical-align: top;
+  }
+  aside {
+    display: table-cell;
+    background:       #23edfb;
+    width:auto;
+    font-size:        110%;
+    padding:          8px;
+    vertical-align: top;
+  }
+  
+  footer {
+    background-color: #ede913;
+    color:            #12020d;
+    text-align:       center;
+    padding:          12px;
+    margin: 0px 10px 10px 10px;
+    font-size:        90%;
+  }
+  
+  h1 {
+    font-size:        120%;
+    color:            #0e0707;
+  }
+  
+  h2 { 
+    font-size: 100%; 
+    color:#0e0707
+  }
+  
+  .list { 
+    color: #d53a0a;
+    font-style: italic;
+  }
+  
+  .plan {
+    text-align:       center;
+    line-height:      1.5em;
+  }
+  
+  a:link {
+    color:            #f2e8e8;
+    text-decoration:  none;
+    border-bottom:    2px solid #160b15;
+  }
+  a:visited {
+    color:            #220fcc;
+    text-decoration:  none;
+    border-bottom:    2px solid #0c0c0b;
+  }
+  
+  a:hover {
+    color:#2e029b;
+    background:#ede913;
+  }
+  
+  nav {
+      background-color: #ccda09;
+      margin: 10px 10px 0px 10px;
+  }
+  nav ul {
+      margin: 0px;
+      list-style-type: none;
+      padding: 5px 0px 5px 0px;
+  }
+  nav ul li {
+      display: inline;
+      padding: 5px 10px 5px 10px;
+  }
+  nav ul li a:link, nav ul li a:visited {
+      color: #1a20c1;
+      border-bottom: none;
+      font-weight: bold;
+  }
+  nav ul li.selected {
+      background-color: #1cc8cb;
+  }
+/*    表格内容样式     */
+  table {
+    margin-left:      20px;
+    margin-right:     20px;
+    border:           2px solid black;
+    caption-side:     bottom;
+    border-collapse:  collapse;
+  }
+  
+  table table th {
+    background-color: rgb(224, 198, 7);
+  }
+  
+  td, th {
+    border:           thin dotted gray;
+    padding:          5px;
+  }
+  
+  th {
+    background-color: #d143db;
+  }
+  
+  
+  .cellcolor {
+    background-color: #1b8fad;
+  }
+  
+  
+  
+  caption {
+    font-style:italic;
+    padding-top:      8px;
+  }
+  
+  .center {
+    text-align:       center;
+  }
+  
+  .right {
+    text-align:       right;
+  }
+  
+  li {
+    padding-top:      5px;
+    margin-left:      10px;
+  }
+ 
